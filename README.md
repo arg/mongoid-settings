@@ -2,6 +2,7 @@
 
 A simple gem to store application settings into a MongoDB collection.
 
+[![Gem Version](https://badge.fury.io/rb/mongoid-settings.png)](http://badge.fury.io/rb/mongoid-settings)
 [![Build Status](https://travis-ci.org/agladkyi/mongoid-settings.png)](https://travis-ci.org/agladkyi/mongoid-settings)
 
 ## Installation
