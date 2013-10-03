@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version = Mongoid::Settings::VERSION
   spec.authors = ['Andrei Gladkyi']
   spec.email = ['arg@arglabs.net']
-  spec.description = ''
-  spec.summary = ''
+  spec.description = 'A simple gem to store application settings into a MongoDB collection.'
+  spec.summary = 'A simple gem to store application settings into a MongoDB collection.'
   spec.homepage = 'https://github.com/agladkyi/mongoid-settings'
   spec.license = 'MIT'
 

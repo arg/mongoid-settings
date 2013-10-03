@@ -1,5 +1,8 @@
 # mongoid-settings
 
+A simple gem to store application settings into a MongoDB collection.
+
+[![Build Status](https://travis-ci.org/agladkyi/mongoid-settings.png)](https://travis-ci.org/agladkyi/mongoid-settings)
 
 ## Installation
 
@@ -16,6 +19,28 @@ Or install it yourself as:
     $ gem install mongoid-settings
 
 ## Usage
+
+Create a model which includes `Mongoid::Settings`.
+
+    class ApplicationSettings
+      include Mongoid::Settings
+
+      setting :some_name, type: String, default: 'some value'
+      setting :another
+    end
+
+It will allow to use:
+
+    ApplicationSettings.some_name
+    => 'some value'
+
+    ApplicationSettings.some_name = 'another value'
+    ApplicationSettings.some_name
+    => 'another value'
+
+    ApplicationSettings[:another] = 100
+    ApplicationSettings[:another]
+    => 100
 
 ## License
 
